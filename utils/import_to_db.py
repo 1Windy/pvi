@@ -1,9 +1,11 @@
-import os
-from settings import db
-import xmltodict
 import json
-from models.bha import BHA, BHA_Component
+import os
+
+import xmltodict
+
 from manage import app
+from models.bha import BHA, BHA_Component
+from settings import db
 
 case_file_dir = os.path.abspath(os.pardir) + '/Casefile'
 sqlite_dir = 'sqlite:///' + os.path.join(os.path.abspath(os.pardir) + '/', 'data.sqlite')
@@ -47,4 +49,4 @@ def import_db():
 
 
 if __name__ == '__main__':
-    import_db()
+    print(import_db())
