@@ -1,0 +1,148 @@
+<BHAData ProductName="BHAPRO" ProductVersion="0.1.0.1026" SaveDate="11/1/2018 4:59:36 PM" ComputerName="LAPTOP-JN0BCFKR" UserName="cangt" OSName="Microsoft Windows NT 6.2.9200.0" CurrentCulture="English (United States)" DataVersion="1.00" ClassType="BHAData.BHAPROData" Index="0">
+  <General ClassType="BHAData.GeneralData" Date="6/6/2018 2:23:12 PM" Operator="" Well="" Field="" Rig="" Country="" Contractor="" Job="" By="Jinze Song" Comments="测试点：水平井，Dogleg=0，TOB=6000&#xD;&#xA;&#xD;&#xA;预期值：" UserLogoChecked="False" UserLogo="" ClientLogoChecked="False" ClientLogo="" WellLocation="Land" AirGap="" WaterDepth="" SubseaWellheadChecked="False" BendingStressLimit="68000" ContactForceLimit="2000" SafetyMargin="80.00" SurveyType="H" Index="0" />
+  <Survey ClassType="BHAData.SurveyData" AnnotationChecked="False" TortuosityChecked="False" ProjectAziChecked="False" ProjectAzi="" MaxTortuosity="" Index="0">
+    <Survey ClassType="BHAData.SurveyTable" Index="0">
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="0.0" Inc="0" Azi="0" Index="0" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="100" Inc="0" Azi="0" Index="1" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="200" Inc="30" Azi="0" Index="2" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="300" Inc="45" Azi="0" Index="3" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="400" Inc="60" Azi="0" Index="4" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="500" Inc="90" Azi="0" Index="5" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="600" Inc="90" Azi="0" Index="6" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="700" Inc="90" Azi="0" Index="7" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="800" Inc="90" Azi="0" Index="8" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="900" Inc="90" Azi="0" Index="9" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1000" Inc="90" Azi="0" Index="10" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1100" Inc="90" Azi="0" Index="11" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1200" Inc="90" Azi="0" Index="12" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1300" Inc="90" Azi="0" Index="13" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1400" Inc="90" Azi="0" Index="14" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1500" Inc="90" Azi="0" Index="15" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1600" Inc="90" Azi="0" Index="16" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1700" Inc="90" Azi="0" Index="17" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1800" Inc="90" Azi="0" Index="18" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="1900" Inc="90" Azi="0" Index="19" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2000" Inc="90" Azi="0" Index="20" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2100" Inc="90" Azi="0" Index="21" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2200" Inc="90" Azi="0" Index="22" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2300" Inc="90" Azi="0" Index="23" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2400" Inc="90" Azi="0" Index="24" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2500" Inc="90" Azi="0" Index="25" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2600" Inc="90" Azi="0" Index="26" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2700" Inc="90" Azi="0" Index="27" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2800" Inc="90" Azi="0" Index="28" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="2900" Inc="90" Azi="0" Index="29" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="3000" Inc="90" Azi="0" Index="30" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="4000" Inc="90" Azi="0" Index="31" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="5000" Inc="90" Azi="0" Index="32" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="6000" Inc="90" Azi="0" Index="33" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="7000" Inc="90" Azi="0" Index="34" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="8000" Inc="90" Azi="0" Index="35" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="9000" Inc="90" Azi="0" Index="36" />
+      <SurveyRow ClassType="BHAData.SurveyRow" MD="10000" Inc="90" Azi="0" Index="37" />
+    </Survey>
+    <Annotation ClassType="BHAData.AnnotationTable" Index="0" />
+    <Tortuosity ClassType="BHAData.TortuosityTable" Index="0" />
+  </Survey>
+  <Wellbore ClassType="BHAData.WellboreData" Index="0">
+    <CasedHole ClassType="BHAData.CasedHoleTable" Index="0">
+      <CasedHoleRow ClassType="BHAData.CasedHoleRow" Bottom="3075.0" Description="" InnerDiameter="16.000" FrictionFactor="0.32" Index="0" />
+      <CasedHoleRow ClassType="BHAData.CasedHoleRow" Bottom="" Description="" InnerDiameter="" FrictionFactor="" Index="1" />
+      <CasedHoleRow ClassType="BHAData.CasedHoleRow" Bottom="" Description="" InnerDiameter="" FrictionFactor="" Index="2" />
+      <CasedHoleRow ClassType="BHAData.CasedHoleRow" Bottom="" Description="" InnerDiameter="" FrictionFactor="" Index="3" />
+      <CasedHoleRow ClassType="BHAData.CasedHoleRow" Bottom="" Description="" InnerDiameter="" FrictionFactor="" Index="4" />
+    </CasedHole>
+    <OpenHole ClassType="BHAData.OpenHoleTable" Index="0">
+      <OpenHoleRow ClassType="BHAData.OpenHoleRow" Bottom="3125.0" Description="" InnerDiameter="14.500" FrictionFactor="0.4" Index="0" />
+      <OpenHoleRow ClassType="BHAData.OpenHoleRow" Bottom="3156.0" Description="" InnerDiameter="12.250" FrictionFactor="0.5" Index="1" />
+      <OpenHoleRow ClassType="BHAData.OpenHoleRow" Bottom="3200.0" Description="" InnerDiameter="10.625" FrictionFactor="0.43" Index="2" />
+      <OpenHoleRow ClassType="BHAData.OpenHoleRow" Bottom="" Description="" InnerDiameter="" FrictionFactor="" Index="3" />
+      <OpenHoleRow ClassType="BHAData.OpenHoleRow" Bottom="" Description="" InnerDiameter="" FrictionFactor="" Index="4" />
+    </OpenHole>
+  </Wellbore>
+  <BHA ClassType="BHAData.BHAData" ComponentOfInterest="0" Index="0">
+    <BHA ClassType="BHAData.BHATable" Index="0">
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="bit" Type="Bit" PartID="" Index="0">
+        <BHAComponet ClassType="BHAData.BHA_Bit" Size="10.625" Wt="400.00" Length="12.000" MakeupTorque="2000" Index="0" />
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="RSS - push" Type="RSS" PartID="" Index="1">
+        <BHAComponet ClassType="BHAData.BHA_RSS" ControlUnit_BladeChecked="True" PushOrPoint="0" BiasUnit_BladeChecked="False" BentOffset="" BentAngle="" Index="0">
+          <ControlUnit ClassType="BHAData.BHASub_Section" OD="9.500" InnerDiameter="7.500" Length="6.0" Index="0" />
+          <BiasUnit ClassType="BHAData.BHASub_Section" OD="10" InnerDiameter="9.5" Length="6" Index="0" />
+          <ControlUnit_Blade ClassType="BHAData.BHASub_Blade" Length="18.000" OD="10.500" Offset="2.0" Index="0" />
+          <SteeringRib ClassType="BHAData.BHASub_SteeringRib" Offset="3.0" OD="10.625" Length="2.0" SideForce="10000" Index="0" />
+          <BiasUnit_Blade ClassType="BHAData.BHASub_Blade" Length="" OD="" Offset="" Index="0" />
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="3000.00" Yield="150000" UltimateTensileStrength="200000" MakeupTorque="2500" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="dc" Type="DrillCollar" PartID="" Index="2">
+        <BHAComponet ClassType="BHAData.BHA_DrillCollar" Index="0">
+          <DrillCollar ClassType="BHAData.BHASub_Section" OD="10.000" InnerDiameter="5.000" Length="20.0" Index="0" />
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="4000.00" Yield="150000" UltimateTensileStrength="200000" MakeupTorque="2300" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="dc" Type="DrillCollar" PartID="" Index="3">
+        <BHAComponet ClassType="BHAData.BHA_DrillCollar" Index="0">
+          <DrillCollar ClassType="BHAData.BHASub_Section" OD="8.000" InnerDiameter="4.000" Length="30.0" Index="0" />
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="600.00" Yield="150000" UltimateTensileStrength="200000" MakeupTorque="2000" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="stab" Type="Stabilizer" PartID="" Index="4">
+        <BHAComponet ClassType="BHAData.BHA_Stabilizer" Index="0">
+          <PipeBody ClassType="BHAData.BHASub_Section" OD="8.000" InnerDiameter="4.000" Length="10.0" Index="0" />
+          <Blade ClassType="BHAData.BHASub_Blade" Length="36.000" OD="8.500" Offset="3.0" Index="0" />
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="1500.00" Yield="150000" UltimateTensileStrength="200000" MakeupTorque="3000" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="dc" Type="DrillCollar" PartID="" Index="5">
+        <BHAComponet ClassType="BHAData.BHA_DrillCollar" Index="0">
+          <DrillCollar ClassType="BHAData.BHASub_Section" OD="8.000" InnerDiameter="4.000" Length="30.0" Index="0" />
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="600.00" Yield="150000" UltimateTensileStrength="20000" MakeupTorque="3000" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="stabilizer2" Type="Stabilizer" PartID="" Index="6">
+        <BHAComponet ClassType="BHAData.BHA_Stabilizer" Index="0">
+          <PipeBody ClassType="BHAData.BHASub_Section" OD="7.000" InnerDiameter="4.000" Length="8.0" Index="0" />
+          <Blade ClassType="BHAData.BHASub_Blade" Length="24.000" OD="8.000" Offset="4.0" Index="0" />
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="2000.00" Yield="150000" UltimateTensileStrength="200000" MakeupTorque="2300" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="HWDP" Type="HWDP" PartID="" Index="7">
+        <BHAComponet ClassType="BHAData.BHA_HWDP" CenterUpsetChecked="False" CenterUpset_Offset="" CenterUpset_OD="" CenterUpset_Length="" Index="0">
+          <PipeBody ClassType="BHAData.BHASub_Section" OD="6.500" InnerDiameter="3.500" Length="28.0" Index="0" />
+          <ToolJoint ClassType="BHAData.ToolJointTable" Index="0">
+            <BHASub_Section ClassType="BHAData.BHASub_Section" OD="6.000" InnerDiameter="3.500" Length="1.0" Index="0" />
+            <BHASub_Section ClassType="BHAData.BHASub_Section" OD="6.000" InnerDiameter="3.500" Length="1.0" Index="1" />
+          </ToolJoint>
+          <Material ClassType="BHAData.BHASub_Material" TotalWt="600.00" Yield="150000" UltimateTensileStrength="200000" MakeupTorque="2000" Index="0" />
+        </BHAComponet>
+      </BHAComponentRow>
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="8" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="9" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="10" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="11" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="12" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="13" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="14" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="15" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="16" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="17" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="18" />
+      <BHAComponentRow ClassType="BHAData.BHAComponentRow" Description="" Type="" PartID="" Index="19" />
+    </BHA>
+  </BHA>
+  <Operation ClassType="BHAData.OperationData" DepthOfInterest="" Index="0">
+    <Operation ClassType="BHAData.OperationTable" Index="0">
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="3201.0" MW="8.00" WOB="16" TOB="6000" ROP="80" RPM="100.0" FrictionFactor="0.45" Index="0" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="1" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="2" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="3" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="4" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="5" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="6" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="7" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="8" />
+      <OperationRow ClassType="BHAData.OperationRow" Description="" EndingDepth="" MW="" WOB="" TOB="" ROP="" RPM="" FrictionFactor="" Index="9" />
+    </Operation>
+  </Operation>
+</BHAData>
