@@ -1,15 +1,17 @@
-from models import BHA_Component, BHA, StatusEnum
 from flask import (
     request, render_template, views, Blueprint, flash, jsonify
 )
 from flask_paginate import Pagination
-from settings import db, SQLALCHEMY_DATABASE_URI
-from bha.forms import UpdateStatusFrom
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import StaticPool
+
+from bha.forms import UpdateStatusFrom
+from models import BHA_Component, BHA, StatusEnum
+from settings import db, SQLALCHEMY_DATABASE_URI
 from utils.paginate import get_page
 
-engine = create_engine(SQLALCHEMY_DATABASE_URI)
+engine = create_engine(SQLALCHEMY_DATABASE_URI, connect_args={'check_same_thread': False}, poolclass=StaticPool)
 session = sessionmaker(engine)()
 
 bp = Blueprint('bha', __name__)
