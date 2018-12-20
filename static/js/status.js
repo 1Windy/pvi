@@ -16,9 +16,8 @@ $(function () {
                'status': status
            },
            success: function(data){
-               if(data.code==200){
-                   window.location.href = '/';
-               }else {
+               if (data.code == 200) {
+               } else {
                    alert(data.message);
                }
            }
