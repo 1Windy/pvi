@@ -1,16 +1,16 @@
-from flask_sqlalchemy import SQLAlchemy
-from flask_bootstrap import Bootstrap
 import os
+
+from flask_bootstrap import Bootstrap
+from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 bootstrap = Bootstrap()
 
-DEBUG = True
+DEBUG = False
 
 WTF_CSRF_ENABLED = False
 TEMPLATES_AUTO_RELOAD = True
 
-# WTF_CSRF_ENABLED = False
 SECRET_KEY = os.urandom(24)
 
 basedir = os.path.abspath('.')
