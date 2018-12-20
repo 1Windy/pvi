@@ -53,6 +53,14 @@
             <label for="create_by">Created By:</label>
             <input type="text" class="form-control" name="create_by" placeholder="Created By">
         </div>
+        <div class="form-group">
+            <select style="width:100px; height: 36px" id="round" name="round" required>
+                <option value="{{ round }}">{{ round }}</option>
+                {% for round in rounds %}
+                    <option value="{{ round }}">{{ round }}</option>
+                {% endfor %}
+            </select>
+        </div>
         <button type="submit" class="btn btn-success">Search</button>
     </form>
 
@@ -66,22 +74,24 @@
                 <th>Status</th>
             </thead>
             <tbody>
-                {% if bhas %}
-                    {% for bha in bhas %}
+            {% if bha_rounds %}
+                {% for round in bha_rounds %}
                         <tr>
-                            <td>{{ bha.case_file }}</td>
-                            <td>{{ bha.description }}</td>
-                            <td>{{ bha.date }}</td>
-                            <td>{{ bha.create_by }}</td>
+                            <td>{{ round.bha.case_file }}</td>
+                            <td>{{ round.bha.description }}</td>
+                            <td>{{ round.bha.date }}</td>
+                            <td>{{ round.bha.create_by }}</td>
                             <td>
                                 <div class="form-group">
                                     <select id="update_status" name="update_status" required>
-                                        <option value="{{ bha.status }}">{{ bha.status }}</option>
+                                        <option value="{{ round.status }}">{{ round.status }}</option>
                                         {% for status in statuses %}
                                             <option value="{{ status }}">{{ status }}</option>
                                         {% endfor %}
                                     </select>
-                                    <button class="btn btn-info save-bha-btn" data-id="{{ bha.id }}">保存</button>
+                                    <button class="btn btn-info save-bha-btn" data-id="{{ round.id }}"
+                                            data-round="{{ round.round }}">保存
+                                    </button>
                                 </div>
                             </td>
                         </tr>

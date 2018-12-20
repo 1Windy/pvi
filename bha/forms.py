@@ -12,5 +12,6 @@ class BaseForm(FlaskForm):
 
 
 class UpdateStatusFrom(BaseForm):
-    id = IntegerField(validators=[InputRequired(message='missed bha.id')])
-    status = StringField(validators=[InputRequired(message='missed bha.status')])
+    id = IntegerField(validators=[InputRequired(message='missed round.id')])
+    round = StringField(validators=[InputRequired(message='missed round.round')])
+    status = StringField(validators=[InputRequired(message='missed status')])

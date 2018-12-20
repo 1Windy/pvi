@@ -4,7 +4,7 @@ import os
 import xmltodict
 
 from manage import app
-from models.bha import BHA, BHA_Component
+from models.bha import BHA, BHAComponent, RoundEnum, BHARound
 from settings import db
 
 case_file_dir = os.path.abspath(os.pardir) + '/Casefile'
@@ -36,13 +36,17 @@ def import_db():
                       description=data['BHAData']['General']['Comments'].replace(' ', ''),
                       create_by=data['BHAData']['General']['By'], date=data['BHAData']['General']['Date'],
                       survey_type=data['BHAData']['General']['SurveyType'])
+            for i in RoundEnum.details():
+                bha_round = BHARound(round=i, bha=bha)
+                db.session.add(bha_round)
+                db.session.commit()
             for row in data['BHAData']['BHA']['BHA']['BHAComponentRow']:
                 if row['Type'] == 'Bit':
-                    component = BHA_Component(bha_type=row['Type'], bit_size=row['BHAComponet']['Size'], bha=bha)
+                    component = BHAComponent(bha_type=row['Type'], bit_size=row['BHAComponet']['Size'], bha=bha)
                     db.session.add(component)
                     db.session.commit()
                 else:
-                    component = BHA_Component(bha_type=row['Type'], bha=bha)
+                    component = BHAComponent(bha_type=row['Type'], bha=bha)
                     db.session.add(component)
                     db.session.commit()
     return 'success'

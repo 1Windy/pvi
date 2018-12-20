@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from bha.forms import UpdateStatusFrom
-from models import BHA_Component, BHA, StatusEnum
+from models import BHAComponent, BHA, StatusEnum, BHARound, RoundEnum
 from settings import db, SQLALCHEMY_DATABASE_URI
 from utils.paginate import get_page
 
@@ -26,23 +26,29 @@ class BHAView(views.MethodView):
             query.append(BHA.survey_type == v) if k == 'survey_type' and v else None
             query.append(BHA.case_file == v) if k == 'case_file' and v else None
             query.append(BHA.create_by == v) if k == 'create_by' and v else None
-            query.append(BHA_Component.bha_type == v) if k == 'bha_type' and v else None
-            query.append(BHA_Component.bit_size == v) if k == 'bit_size' and v else None
+            query.append(BHAComponent.bha_type == v) if k == 'bha_type' and v else None
+            query.append(BHAComponent.bit_size == v) if k == 'bit_size' and v else None
+
+        _round = request.args.get('round', 'alpha')
 
         if request.args.get('bha_type') or request.args.get('bha_size'):
-            bha_set = session.query(BHA).join(BHA_Component).filter(*query)
+            bha_ids = session.query(BHA.id).join(BHAComponent).filter(*query).subquery()
         else:
-            bha_set = session.query(BHA).filter(*query)
+            bha_ids = session.query(BHA.id).filter(*query).subquery()
+
+        bha_round_set = session.query(BHARound).filter(BHARound.bha_id.in_(bha_ids), BHARound.round == _round)
 
         page, start, end = get_page()
-        bhas = bha_set.slice(start, end)
-        total = bha_set.count()
+        rounds = bha_round_set.slice(start, end)
+        total = bha_round_set.count()
         pagination = Pagination(bs_version=3, page=page, total=total, outer_window=1, inner_window=3)
 
         context = {
-            "bhas": bhas,
+            "round": _round,
+            "bha_rounds": rounds.all(),
             "pagination": pagination,
-            "statuses": StatusEnum.details()
+            "statuses": StatusEnum.details(),
+            "rounds": RoundEnum.details()
         }
 
         return render_template('bha.html', **context)
@@ -54,9 +60,11 @@ class BHAView(views.MethodView):
             return jsonify({'code': 400, 'message': form.get_error()})
 
         id = form.id.data
+        _round = form.round.data
         status = form.status.data
-        bha = BHA.query.get_or_404(id)
-        bha.status = status
+        bha_round = BHARound.query.get_or_404(id)
+        bha_round.round = _round
+        bha_round.status = status
         db.session.commit()
         return jsonify({'code': 200, 'message': 'update success', 'status': status})
 
