@@ -30,13 +30,18 @@ class BHAView(views.MethodView):
             query.append(BHAComponent.bit_size == v) if k == 'bit_size' and v else None
 
         _round = request.args.get('round', 'alpha')
+        _status = request.args.get('bha_status', StatusEnum.Preparing.value)
 
         if request.args.get('bha_type') or request.args.get('bha_size'):
             bha_ids = session.query(BHA.id).join(BHAComponent).filter(*query).subquery()
         else:
             bha_ids = session.query(BHA.id).filter(*query).subquery()
 
-        bha_round_set = session.query(BHARound).filter(BHARound.bha_id.in_(bha_ids), BHARound.round == _round)
+        bha_round_set = session.query(BHARound).filter(
+            BHARound.bha_id.in_(bha_ids),
+            BHARound.round == _round,
+            BHARound.status == _status
+        )
 
         page, start, end = get_page()
         rounds = bha_round_set.slice(start, end)
@@ -47,6 +52,7 @@ class BHAView(views.MethodView):
             "round": _round,
             "bha_rounds": rounds.all(),
             "pagination": pagination,
+            "bha_status": _status,
             "statuses": StatusEnum.details(),
             "rounds": RoundEnum.details()
         }
