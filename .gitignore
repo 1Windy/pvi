@@ -5,5 +5,5 @@
 *.pyc
 log/
 */.gitignore
-*/migrations
-*/data.sqlite
+migrations/
+data.sqlite
