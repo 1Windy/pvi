@@ -80,6 +80,8 @@
                 <th>Date</th>
                 <th>Created By</th>
                 <th>Status</th>
+                <th>Comment</th>
+                <th>Save</th>
             </thead>
             <tbody>
             {% if bha_rounds %}
@@ -97,10 +99,16 @@
                                             <option value="{{ status }}">{{ status }}</option>
                                         {% endfor %}
                                     </select>
-                                    <button class="btn btn-info save-bha-btn" data-id="{{ round.id }}"
-                                            data-round="{{ round.round }}">保存
-                                    </button>
                                 </div>
+                            </td>
+                            <td>
+                                <input type="text" name="comment" value="{{ round.comment or '' }}"
+                                       title="{{ round.comment or '' }}">
+                            </td>
+                            <td>
+                                <button class="btn btn-info save-bha-btn" data-id="{{ round.id }}"
+                                        data-round="{{ round.round }}">保存
+                                </button>
                             </td>
                         </tr>
                     {% endfor %}

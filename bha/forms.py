@@ -15,3 +15,4 @@ class UpdateStatusFrom(BaseForm):
     id = IntegerField(validators=[InputRequired(message='missed round.id')])
     round = StringField(validators=[InputRequired(message='missed round.round')])
     status = StringField(validators=[InputRequired(message='missed status')])
+    comment = StringField()

@@ -52,5 +52,6 @@ class BHARound(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     round = db.Column(db.String(50))
     status = db.Column(db.String(20), default=StatusEnum.Preparing.value)
+    comment = db.Column(db.TEXT)
 
     bha_id = db.Column(db.Integer, db.ForeignKey('BHA.id', ondelete='CASCADE', onupdate="CASCADE"))

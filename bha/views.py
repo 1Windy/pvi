@@ -68,9 +68,11 @@ class BHAView(views.MethodView):
         id = form.id.data
         _round = form.round.data
         status = form.status.data
+        comment = form.comment.data
         bha_round = BHARound.query.get_or_404(id)
         bha_round.round = _round
         bha_round.status = status
+        bha_round.comment = comment
         db.session.commit()
         return jsonify({'code': 200, 'message': 'update success', 'status': status})
 

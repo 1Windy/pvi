@@ -5,7 +5,9 @@ $(function () {
 
        var id = $(this).attr('data-id');
        var round = $(this).attr('data-round');
-       var status = $(this).prev('#update_status').val();
+       var tr = $(this).parent().parent();
+       var status = tr.find("#update_status").val();
+       var comment = tr.find('input[name="comment"]').val();
 
        $.ajax({
            url: '/',
@@ -13,7 +15,8 @@ $(function () {
            data: {
                'id': id,
                'round': round,
-               'status': status
+               'status': status,
+               'comment': comment
            },
            success: function(data){
                if (data.code == 200) {
