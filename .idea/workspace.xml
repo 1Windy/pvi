@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6b7228e6-9781-4bf6-92b1-e800bde760be" name="Default Changelist" comment="python tornado_server.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bha/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bha/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bha/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bha/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/versions/10653fc9a5f6_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/bha.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/bha.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bha.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bha.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +81,6 @@
         <option value="$PROJECT_DIR$/utils/import_to_db.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tornado_server.py" />
         <option value="$PROJECT_DIR$/pvi.py" />
         <option value="$PROJECT_DIR$/start.vbs" />
@@ -96,6 +90,7 @@
         <option value="$PROJECT_DIR$/templates/bha.html" />
         <option value="$PROJECT_DIR$/models/bha.py" />
         <option value="$PROJECT_DIR$/migrations/env.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -124,33 +119,7 @@
             <path>
               <item name="pvi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pvi" type="462c0819:PsiDirectoryNode" />
-              <item name="bha" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pvi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pvi" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pvi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pvi" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-              <item name="versions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pvi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pvi" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pvi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pvi" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pvi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pvi" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +276,7 @@
       <workItem from="1545707263385" duration="560000" />
       <workItem from="1545956896152" duration="467000" />
       <workItem from="1546417693350" duration="1172000" />
-      <workItem from="1546744187488" duration="7540000" />
+      <workItem from="1546744187488" duration="8075000" />
     </task>
     <task id="LOCAL-00001" summary="init data">
       <created>1544948521464</created>
@@ -365,11 +334,32 @@
       <option name="project" value="LOCAL" />
       <updated>1546419126707</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add comment">
+      <created>1546832437712</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546832437712</updated>
+    </task>
+    <task id="LOCAL-00010" summary=".gitingore">
+      <created>1546832610299</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546832610299</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".gitingore">
+      <created>1546832736919</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546832736919</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84034000" />
+    <option name="totallyTimeSpent" value="84569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,7 +408,9 @@
     <MESSAGE value="start.vbs" />
     <MESSAGE value="add status select" />
     <MESSAGE value="python tornado_server.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="python tornado_server.py" />
+    <MESSAGE value="add comment" />
+    <MESSAGE value=".gitingore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitingore" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -554,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pvi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -670,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/versions/b35754aec356_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/bha.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
@@ -691,6 +669,20 @@
           <folding>
             <element signature="e#0#84#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/versions/b35754aec356_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
